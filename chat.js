@@ -43,7 +43,7 @@ $( document).ready(function() {
 	});
 
 	$('#textName').on('change',function(e){
-		$('.nickname').attr("src",$('#textName').val());
+		$('.nickname, #userName').text($('#textName').val());
 		userName = $('#textName').val();
 	})
 
